@@ -1,55 +1,79 @@
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        .large-header {
-   position: relative;
-   width: 100%;
-   background: #111;
-   overflow: hidden;
-   background-size: cover;
-   background-position: center center;
-   z-index: 1;
-}
-
-.main-title {
-   position: absolute;
-   margin: 0;
-   padding: 0;
-   color: #F9F1E9;
-   text-align: center;
-   top: 50%;
-   left: 50%;
-   -webkit-transform: translate3d(-50%, -50%, 0);
-   transform: translate3d(-50%, -50%, 0);
-}
-
-.demo .main-title {
-   text-transform: uppercase;
-   font-size: 4.2em;
-   letter-spacing: 0.1em;
-}
-
-.main-title .thin {
-   font-weight: 200;
-}
-
-@media only screen and (max-width: 768px) {
-   .demo .main-title {
-      font-size: 3em;
+<html lang="en"><head>
+   <meta charset="UTF-8">
+   <link rel="apple-touch-icon" type="image/png" href="https://static.codepen.io/assets/favicon/apple-touch-icon-5ae1a0698dcc2402e9712f7d01ed509a57814f994c660df9f7a952f3060705ee.png">
+   <meta name="apple-mobile-web-app-title" content="CodePen">
+   <link rel="shortcut icon" type="image/x-icon" href="https://static.codepen.io/assets/favicon/favicon-aec34940fbc1a6e787974dcd360f2c6b63348d4b1f4e06c77743096d55480f33.ico">
+   <link rel="mask-icon" type="" href="https://static.codepen.io/assets/favicon/logo-pin-8f3771b1072e3c38bd662872f6b673a722f4b3ca2421637d5596661b4e2132cc.svg" color="#111">
+   <title>CodePen - Animated Background Header</title>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+   <style>
+   .large-header {
+      position: relative;
+      width: 100%;
+      background: #111;
+      overflow: hidden;
+      background-size: cover;
+      background-position: center center;
+      z-index: 1;
    }
-}
-    </style>
-</head>
-<body>
-    <div class="container demo">
-        <div class="content">
-           <div id="large-header" class="large-header">
-              <canvas id="demo-canvas"></canvas>
-           </div>
-        </div>
-     </div>
-</body>
-</html>
+   
+   .main-title {
+      position: absolute;
+      margin: 0;
+      padding: 0;
+      color: #F9F1E9;
+      text-align: center;
+      top: 50%;
+      left: 50%;
+      -webkit-transform: translate3d(-50%, -50%, 0);
+      transform: translate3d(-50%, -50%, 0);
+   }
+   
+   .demo .main-title {
+      text-transform: uppercase;
+      font-size: 4.2em;
+      letter-spacing: 0.1em;
+   }
+   
+   .main-title .thin {
+      font-weight: 200;
+   }
+   
+   @media only screen and (max-width: 768px) {
+      .demo .main-title {
+         font-size: 3em;
+      }
+   }
+   </style>
+   <script>
+     window.console = window.console || function(t) {};
+   </script>
+   <script>
+     if (document.location.search.match(/type=embed/gi)) {
+       window.parent.postMessage("resize", "*");
+     }
+   </script>
+   <script src="chrome-extension://mooikfkahbdckldjjndioackbalphokd/assets/prompt.js"></script></head>
+   <body translate="no">
+   <div class="container demo">
+   <div class="content">
+   <div id="large-header" class="large-header" style="height: 368px;">
+   <canvas id="demo-canvas" width="438" height="368"></canvas>
+   </div>
+   </div>
+   </div>
+   <script src="https://static.codepen.io/assets/common/stopExecutionOnTimeout-db44b196776521ea816683afab021f757616c80860d31da6232dedb8d7cc4862.js"></script>
+   <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/499416/TweenLite.min.js"></script>
+   <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/499416/EasePack.min.js"></script>
+   <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/499416/demo.js"></script>
+   <script id="rendered-js">
+   // There are a few JS dependancies
+   
+   // Check the settings to take a look
+   // at those as they are necessary.
+   //# sourceURL=pen.js
+       </script>
+   <script src="https://static.codepen.io/assets/editor/iframe/iframeRefreshCSS-e120fd1ef4e480df85dd5faf7ee953074e62dc3d6da49fdf75fe06deb33f93c5.js"></script>
+   
+   
+   </body></html>
